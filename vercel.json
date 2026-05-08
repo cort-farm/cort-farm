@@ -1,0 +1,6 @@
+{
+  "installCommand": "node -e \"const fs=require('fs');fs.copyFileSync('package.vercel.json','package.json');\" && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}
