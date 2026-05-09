@@ -9,7 +9,7 @@ export function formatCurrency(amount: number): string {
   return new Intl.NumberFormat("ar-SA", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-  }).format(amount) + " ر.س";
+  }).format(amount) + " ج.م";
 }
 
 export function formatDate(date: Date | string): string {
@@ -23,7 +23,7 @@ export function formatDate(date: Date | string): string {
 
 export function formatShortDate(date: Date | string): string {
   const d = typeof date === "string" ? new Date(date) : date;
-  return new Intl.DateTimeFormat("ar-SA", {
+  return new Intl.DateTimeFormat("ar-eg", {
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
